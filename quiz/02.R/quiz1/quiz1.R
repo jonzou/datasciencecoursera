@@ -1,0 +1,6 @@
+dfq  <- read.csv('hw1_data.csv')
+sum(is.na(dfq$Ozone))
+mean(dfq$Ozone, na.rm=T)
+mean(dfq[dfq$Ozone>31&dfq$Temp>90,'Solar.R'], na.rm=T)
+mean(dfq[dfq$Month==6,'Temp'], na.rm=T)
+max(dfq[dfq$Month==5, 'Ozone'], na.rm=T)
